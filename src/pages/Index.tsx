@@ -11,7 +11,7 @@ const Index = () => {
   const [username, setUsername] = useState("");
 
   useEffect(() => {
-    const wss = new WebSocket("ws://chat-room-0fbx.onrender.com");
+    const wss = new WebSocket("https://chat-room-0fbx.onrender.com");
     
     wss.onopen = () => {
       setWs(wss);
