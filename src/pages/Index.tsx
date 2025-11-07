@@ -11,7 +11,7 @@ const Index = () => {
   const [username, setUsername] = useState("");
 
   useEffect(() => {
-    const wss = new WebSocket("ws://localhost:8080");
+    const wss = new WebSocket("https://chat-room-three-alpha.vercel.app");
     
     wss.onopen = () => {
       setWs(wss);
